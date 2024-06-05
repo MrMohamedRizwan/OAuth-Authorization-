@@ -3,7 +3,9 @@ const morgan = require("morgan");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
+const passportSetup = require("./config/passport-setup");
 const authRoutes = require("./routes/auth-routes");
+console.log(process.env.GOOGLE_CLIENT_ID);
 app.use(morgan("dev"));
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
