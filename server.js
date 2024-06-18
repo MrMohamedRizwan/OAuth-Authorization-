@@ -5,7 +5,7 @@ dotenv.config();
 const app = express();
 const passportSetup = require("./config/passport-setup");
 const authRoutes = require("./routes/auth-routes");
-console.log(process.env.GOOGLE_CLIENT_ID);
+// console.log(process.env.CLIENT_ID);
 app.use(morgan("dev"));
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
