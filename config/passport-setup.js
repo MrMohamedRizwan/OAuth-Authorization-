@@ -8,7 +8,7 @@ passport.use(
 			clientSecret: process.env.CLIENT_SECRET,
 		},
 		(accessToken, refreshToken, profile, done) => {
-			console.log(accessToken);
+			console.log(done);
 		},
 	),
 );
